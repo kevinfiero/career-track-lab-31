@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CharacterList from '../../components/CharacterList/CharacterList';
+import CharacterList from '../../components/characterList/CharacterList';
 import { getCharacters } from '../../services/characterApi';
 
 const ListPage = () => {
