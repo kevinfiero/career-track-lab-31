@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList component renders CharacterList 1`] = `
+<DocumentFragment>
+  <ul
+    data-testid="characters"
+  >
+    <li>
+      <a
+        href="/5da237699734fdcb7bef8f51"
+      >
+        <figure>
+          <img
+            src="https://vignette.wikia.nocookie.net/heyarnold/images/f/f5/Arnold.png/revision/latest?cb=20181027162333"
+          />
+          <figcaption>
+            <h1>
+              Arnold Shortman
+            </h1>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/5da237699734fdcb7bef8f52"
+      >
+        <figure>
+          <img
+            src="https://vignette.wikia.nocookie.net/heyarnold/images/7/79/GrandpaPhil.png/revision/latest/scale-to-width-down/300?cb=20160924030436"
+          />
+          <figcaption>
+            <h1>
+              Grandpa Phil
+            </h1>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

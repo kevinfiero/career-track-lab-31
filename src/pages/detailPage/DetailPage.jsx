@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import CharacterListItem from '../../components/characterList/CharacterListItem';
+import CharacterDetail from '../../components/characterDetail/CharacterDetail';
 import { getCharacterBio } from '../../services/characterApi';
 
 const DetailPage = (props) => {
@@ -16,7 +16,7 @@ const DetailPage = (props) => {
 
   if(loading) return <ul>Loading</ul>;
   return (
-    <CharacterListItem 
+    <CharacterDetail 
       image= {characterBio.image}
       name= {characterBio.name}
       id={characterBio.id}

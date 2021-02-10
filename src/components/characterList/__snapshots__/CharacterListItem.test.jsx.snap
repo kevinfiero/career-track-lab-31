@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterListItem component renders CharacterListItem 1`] = `
+<DocumentFragment>
+  <a
+    href="/5da237699734fdcb7bef8f51"
+  >
+    <figure>
+      <img
+        src="https://vignette.wikia.nocookie.net/heyarnold/images/f/f5/Arnold.png/revision/latest?cb=20181027162333"
+      />
+      <figcaption>
+        <h1>
+          Arnold Shortman
+        </h1>
+      </figcaption>
+    </figure>
+  </a>
+</DocumentFragment>
+`;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import PropTypes from 'prop-types';
-//import './Character.css';
+import './CharacterListItem.css';
 
 const CharacterListItem = ({ image, name, id }) => (
   <Router>

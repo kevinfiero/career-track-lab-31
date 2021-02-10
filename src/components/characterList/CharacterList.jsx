@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CharacterListItem from './CharacterListItem';
+import './CharacterList.css';
 
 const CharacterList = ({ characters }) => {
   const characterElements = characters.map(character => (
