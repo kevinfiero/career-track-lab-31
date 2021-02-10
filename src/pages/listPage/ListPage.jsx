@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import CharacterList from '../../components/characterList/CharacterList';
-import { getCharacters } from '../../services/characterApi';
+import { useListPage } from '../../hooks/listPage';
 
 const ListPage = () => {
-  const [loading, setLoading] = useState(true);
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    getCharacters().then((characters) => {
-      setCharacters(characters);
-      setLoading(false);
-    });
-  }, []);
+  const { loading, characters } = useListPage();
 
   if(loading) return <li>Loading</li>;
   return (
     <CharacterList characters={characters} />
   );
-
 };
 
 export default ListPage;

@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import CharacterDetail from '../../components/characterDetail/CharacterDetail';
-import { getCharacterBio } from '../../services/characterApi';
+import { useDetailPage } from '../../hooks/detailPage';
 
 const DetailPage = (props) => {
-  const [loading, setLoading] = useState(true);
-  const [characterBio, setCharacterBio] = useState({});
-
-  useEffect(() => {
-    getCharacterBio(props.match.params.id).then((characterBio) => {
-      setCharacterBio(characterBio);
-      setLoading(false);
-    });
-  }, []);
+  const { loading, characterBio } = useDetailPage(props);
 
   if(loading) return <ul>Loading</ul>;
   return (
