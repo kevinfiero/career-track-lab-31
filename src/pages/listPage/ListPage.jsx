@@ -13,7 +13,7 @@ const ListPage = () => {
     });
   }, []);
 
-  if(loading) return <ul>Loading</ul>;
+  if(loading) return <li>Loading</li>;
   return <CharacterList characters={characters} />;
 
 };

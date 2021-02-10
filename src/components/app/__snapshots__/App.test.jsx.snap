@@ -2,8 +2,8 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <ul>
+  <li>
     Loading
-  </ul>
+  </li>
 </DocumentFragment>
 `;

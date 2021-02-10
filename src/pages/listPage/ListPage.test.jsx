@@ -26,9 +26,9 @@ describe('ListPage Container', () => {
         </Router>
       );
     });
-    const ul = screen.getByText('Loading');
+    const li = screen.getByText('Loading');
     return waitFor(() => {
-      expect(ul).not.toBeEmptyDOMElement();
+      expect(li).not.toBeEmptyDOMElement();
     });
 
   });
