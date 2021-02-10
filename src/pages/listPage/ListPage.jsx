@@ -14,7 +14,9 @@ const ListPage = () => {
   }, []);
 
   if(loading) return <li>Loading</li>;
-  return <CharacterList characters={characters} />;
+  return (
+    <CharacterList characters={characters} />
+  );
 
 };
 
