@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen, waitFor, cleanup } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
+import { MemoryRouter as Router } from 'react-router-dom';
 import { act } from 'react-dom/test-utils';
 import characterDetailApiResponse from '../../fixtures/detailCharacter.json';
 import DetailPage from './DetailPage';
@@ -18,14 +19,17 @@ describe('DetailPage Container', () => {
 
   afterEach(() => cleanup());
   it('displays a loading screen then a list of characters', async() => {
-    await act(() => {
-      render(<DetailPage match={{ params: { id: '5da237699734fdcb7bef8f51' } }}/>);
-
-      const ul = screen.getByText('Loading');
-    
-      return waitFor(() => {
-        expect(ul).not.toBeEmptyDOMElement();
-      });
+    await act(async() => {
+      render(
+        <Router>
+          <DetailPage match={{ params: { id: '5da237699734fdcb7bef8f51' } }}/>
+        </Router>
+      );
     });
+    const ul = screen.getByText('Loading');
+    return waitFor(() => {
+      expect(ul).not.toBeEmptyDOMElement();
+    });
+
   });
 });
