@@ -24,5 +24,4 @@ export const getCharacterBio = (id) => {
         name: character.name,
       }
     );
-
 };
