@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import CharacterDetail from '../../components/characterDetail/CharacterDetail';
-import { getCharacterBio } from './../../services/characterApi';
+import { getCharacterBio } from '../../services/characterApi';
 
 const DetailPage = (props) => {
   const [loading, setLoading] = useState(true);

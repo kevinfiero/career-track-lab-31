@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CharacterList from '../../components/characterList/CharacterList';
-import { getCharacters } from './../../services/characterApi';
+import { getCharacters } from '../../services/characterApi';
 
 const ListPage = () => {
   const [loading, setLoading] = useState(true);
