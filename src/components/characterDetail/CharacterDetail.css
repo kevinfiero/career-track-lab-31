@@ -1,0 +1,33 @@
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* img{
+  width: 18rem;
+  height: 16rem;
+} */ 
+
+figcaption{
+  width: 22rem;
+}
+
+figure{
+  text-align: center;
+  align-items: center;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+}
+
+h1, label{
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+label{
+  width: 5rem;
+}
