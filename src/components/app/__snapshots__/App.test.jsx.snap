@@ -2,15 +2,24 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <a
-    href="/"
-  >
-    <button>
-      Home
-    </button>
-  </a>
-  <li>
-    Loading
-  </li>
+  <section>
+    <div
+      style="background-color: white;"
+    >
+      <button>
+        Toggle
+      </button>
+      <a
+        href="/"
+      >
+        <button>
+          Home
+        </button>
+      </a>
+    </div>
+    <li>
+      Loading
+    </li>
+  </section>
 </DocumentFragment>
 `;
