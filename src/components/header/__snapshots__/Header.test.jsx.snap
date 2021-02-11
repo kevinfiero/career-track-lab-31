@@ -2,12 +2,19 @@
 
 exports[`Header component renders Header 1`] = `
 <DocumentFragment>
-  <a
-    href="/"
+  <div
+    style="background-color: rgb(51, 51, 51);"
   >
     <button>
-      Home
+      Toggle
     </button>
-  </a>
+    <a
+      href="/"
+    >
+      <button>
+        Home
+      </button>
+    </a>
+  </div>
 </DocumentFragment>
 `;
